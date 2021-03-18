@@ -1,4 +1,4 @@
-// This solution is not mine. It was created by my fellow software developer doychinivanov and its purpose is to serve as an improvement of my initial solution.
+// This solution is not mine. It was created by my fellow software developer Doychin (doychinivanov) and its purpose is to serve as an improvement of my initial solution.
 
 function getNumbersInRange(n, m){
     
