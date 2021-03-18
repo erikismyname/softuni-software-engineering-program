@@ -21,9 +21,3 @@ function getNumbersInRange(n, m){
     }
 
 }
-
-console.log(getNumbersInRange(1, 10));
-
-// Will print a diffrent range of numbers
-// console.log(getNumbersInRange(1, 15));
-// console.log(getNumbersInRange(1, 20));
