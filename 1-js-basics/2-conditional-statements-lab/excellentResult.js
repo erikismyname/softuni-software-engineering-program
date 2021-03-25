@@ -1,5 +1,5 @@
-function solve([grade]) {
+function solve([result]) {
 
-    return Number(grade) >= 5.5 ? 'Excellent!' : '';
+    return Number(result) >= 5.5 ? 'Excellent!' : '';
 
 }
