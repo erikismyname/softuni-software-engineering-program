@@ -22,6 +22,4 @@ function solve([speed]) {
 
     return 'extremely fast';
 
-
-
 }
