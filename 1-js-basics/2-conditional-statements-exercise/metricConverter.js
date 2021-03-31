@@ -16,7 +16,7 @@ function solve([num, from, to]) {
 
         'mmTom': (num / 1000)
 
-    }
+    };
 
     return data[`${from}To${to}`].toFixed(3);
 
