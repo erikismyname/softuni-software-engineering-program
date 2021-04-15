@@ -1,7 +1,13 @@
 function solve([deposit, time, percent]) {
 
-    let monthlyIncrease = ((Number(deposit) * Number(percent)) / 100) / 12;
+    deposit = Number(deposit);
 
-    return Number(deposit) + (Number(time) * monthlyIncrease);
+    time = Number(time);
+
+    percent = Number(percent);
+
+    let monthlyIncrease = ((deposit * percent) / 100) / 12;
+
+    return deposit + (time * monthlyIncrease);
 
 }
