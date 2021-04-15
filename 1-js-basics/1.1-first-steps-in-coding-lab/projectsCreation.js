@@ -1,5 +1,5 @@
-function solve([name, num]) {
+function solve([name, projects]) {
 
-    return `The architect ${name} will need ${Number(num) * 3} hours to complete ${num} project/s.`;
+    return `The architect ${name} will need ${Number(projects) * 3} hours to complete ${projects} project/s.`;
 
 }
