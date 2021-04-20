@@ -1,10 +1,15 @@
 function solve() {
 
-  return '1\n2\n3\n4\n5\n6\n7\n8\n9\n10';
+  return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].join('\n');
 
 }
 
-// The solution below is not mine. It was written by my fellow software developer Doychin (doychinivanov) and its purpose is to serve as an improvement of my initial solution.
+console.log(solve());
+// 1
+// ...
+// 10
+
+// The solution below is not mine. It was written by my fellow software developer Doychin (github -> doychinivanov) and its purpose is to serve as an improvement of my initial solution as Doychin's code is more abstract.
 
 function getNumbersInRange(n, m) {
 
@@ -29,3 +34,5 @@ function getNumbersInRange(n, m) {
   }
 
 }
+
+console.log(getNumbersInRange(1, 10)); // Same result as above.
