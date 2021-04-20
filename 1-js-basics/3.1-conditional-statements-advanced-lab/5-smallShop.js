@@ -4,7 +4,7 @@ function solve([product, town, quantity]) {
 
     let data = {
 
-        'Sofia': {
+        Sofia: {
 
             'coffee': 0.50,
     
@@ -18,7 +18,7 @@ function solve([product, town, quantity]) {
     
         },
 
-        'Plovdiv': {
+        Plovdiv: {
 
             'coffee': 0.40,
     
@@ -32,7 +32,7 @@ function solve([product, town, quantity]) {
     
         },
 
-        'Varna': {
+        Varna: {
 
             'coffee': 0.45,
     
@@ -45,8 +45,15 @@ function solve([product, town, quantity]) {
             'peanuts': 1.55
     
         }
+
     };
 
-    return data[town][product] * quantity;
+    return (data[town][product] * quantity).toFixed(2);
 
 }
+
+console.log(solve(['coffee', 'Varna', '2'])); // 0.9
+
+console.log(solve(['peanuts', 'Plovdiv', '1'])); // 1.5
+
+console.log(solve(['beer', 'Sofia', '6'])); // 7.2

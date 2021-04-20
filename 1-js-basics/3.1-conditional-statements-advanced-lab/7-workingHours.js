@@ -7,3 +7,7 @@ function solve([time, day]) {
     return workingDays.includes(day) && time >= 10 && time <= 18 ? 'open' : 'closed';
 
 }
+
+console.log(solve(['11', 'Monday'])); // open
+
+console.log(solve(['19', 'Friday'])); // closed

@@ -11,3 +11,11 @@ function solve([age, gender]) {
     return age < 16 ? 'Miss' : 'Ms.';
 
 }
+
+console.log(solve(['12', 'f'])); // Miss
+
+console.log(solve(['17', 'm'])); // Mr.
+
+console.log((solve(['25', 'f']))); // Ms.
+
+console.log(solve(['13.5', 'm'])); // Master

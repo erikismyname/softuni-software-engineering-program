@@ -16,8 +16,14 @@ function solve([day]) {
 
         'Sunday': 16
 
-    }
+    };
 
     return priceData[day];
 
 }
+
+console.log(solve(['Monday'])); // 12
+
+console.log(solve(['Friday'])); // 12
+
+console.log(solve(['Sunday'])); // 16
