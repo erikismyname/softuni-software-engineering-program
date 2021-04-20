@@ -1,10 +1,12 @@
 function solve([num]) {
 
-    if (Number(num) < 100) {
+    num = Number(num);
+
+    if (num < 100) {
 
         return 'Less than 100';
 
-    } else if (Number(num) >= 100 && Number(num) <= 200) {
+    } else if (num >= 100 && num <= 200) {
 
         return 'Between 100 and 200';
 
@@ -13,3 +15,9 @@ function solve([num]) {
     return 'Greater than 200';
 
 }
+
+console.log(solve(['95'])); //Less than 100
+
+console.log(solve(['120'])); // Between 100 and 200
+
+console.log(solve(['210'])); // Greater than 200

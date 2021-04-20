@@ -23,3 +23,13 @@ function solve([speed]) {
     return 'extremely fast';
 
 }
+
+console.log(solve(['8'])); // slow
+
+console.log(solve(['49.5'])); // average
+
+console.log(solve(['126'])); // fast
+
+console.log(solve(['160'])); // ultra fast
+
+console.log(solve(['3500'])); // extremely fast

@@ -33,3 +33,15 @@ function solve([num]) {
     return `${bonusPoints}\n${num + bonusPoints}`;
 
 }
+
+console.log(solve(['20']));
+// 6
+// 26
+
+console.log(solve(['175']));
+// 37
+// 212
+
+console.log(solve(['2703']));
+// 270.3
+// 2973.3

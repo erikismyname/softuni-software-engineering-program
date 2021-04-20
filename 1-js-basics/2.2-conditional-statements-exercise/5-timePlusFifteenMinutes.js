@@ -25,3 +25,9 @@ function solve([hours, minutes]) {
     return minutes < 10 ? `${hours}:0${minutes}` : `${hours}:${minutes}`;
 
 }
+
+console.log(solve(['1', '46'])); // 2:01
+
+console.log(solve(['0', '01'])); // 0:16
+
+console.log(solve(['23', '59'])); // 0:14
