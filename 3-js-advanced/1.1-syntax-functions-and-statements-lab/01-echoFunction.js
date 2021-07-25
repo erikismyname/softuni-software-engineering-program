@@ -1,0 +1,1 @@
+const result = (str) => `${str.length}\n${str}`;
