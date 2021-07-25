@@ -1,0 +1,1 @@
+const result = (a, b, c) => `The largest number is ${Math.max(a, b, c)}.`;
