@@ -1,0 +1,1 @@
+const result = (ipt) => typeof ipt == 'number' ? (Math.PI * (ipt ** 2)).toFixed(2) : `We can not calculate the circle area, because we receive a ${typeof ipt}.`;
