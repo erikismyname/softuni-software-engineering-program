@@ -1,0 +1,1 @@
+const result = (matrix) => matrix.map(e => e.sort((a, b) => b - a)[0]).sort((a, b) => b - a)[0];
