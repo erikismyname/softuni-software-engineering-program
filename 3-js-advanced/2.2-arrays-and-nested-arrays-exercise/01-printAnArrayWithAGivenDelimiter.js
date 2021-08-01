@@ -1,0 +1,1 @@
+const result = (arr, del) => arr.join(del);
