@@ -1,0 +1,1 @@
+const result = (arr, step) => arr.filter((e, i) => i % step == 0);
