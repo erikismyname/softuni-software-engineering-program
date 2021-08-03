@@ -1,0 +1,1 @@
+const cityInfo = (name, population, treasury) => ({ name, population, treasury });
