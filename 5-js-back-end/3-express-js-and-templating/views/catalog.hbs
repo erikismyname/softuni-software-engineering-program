@@ -1,0 +1,11 @@
+<h1>Catalog</h1>
+<a href="/catalog/create">Create Book</a>
+{{#if books}}
+<ul>
+    {{#each books}}
+    {{> book}}
+    {{/each}}
+</ul>
+{{else}}
+<p>No books</p>
+{{/if}}
