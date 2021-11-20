@@ -1,0 +1,29 @@
+<h1>{{cube.name}}</h1>
+<img class="cube" src="{{cube.imageUrl}}">
+<div class="details">
+  <p><span>Description:</span> {{cube.description}}</p>
+  <p><span>Difficulty level:</span> {{cube.difficulty}}</p>
+  <a class="btn" href="/edit/{{cube._id}}">Edit</a>
+  <a class="btn" href="/">Back</a>
+  <a class="btn" href="/details/{{cube._id}}/attach">Attach Accessory</a>
+</div>
+<div class="accessories">
+  {{#each cube.accessories}}
+  {{> accessory}}
+  {{else}}
+  <h3 class="italic">This cube has no accessories yet...</h3>
+  {{/each}}
+</div>
+<div class="details">
+  <form action="/comments/{{cube._id}}/create" method="POST">
+    <span>Name: <input type="text" name="author"></span><br>
+    <span>Comment:</span><br>
+    <textarea name="content" cols="30" rows="10"></textarea>
+    <input type="submit" value="Post Comment">
+  </form>
+  {{#each cube.comments}}
+  {{> comment}}
+  {{else}}
+  <p>No comments yet</p>
+  {{/each}}
+</div>
