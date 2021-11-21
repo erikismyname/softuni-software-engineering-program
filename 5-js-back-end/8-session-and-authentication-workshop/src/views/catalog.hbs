@@ -1,0 +1,15 @@
+<h1>Browser</h1>
+<form action="" method="">
+  <input type="text" class="search" name="search" placeholder="Search..." value="{{search}}">
+  <input type="number" name="from" class="difficulty" placeholder="Difficulty from..." value="{{from}}">
+  <span>-</span>
+  <input type="number" name="to" class="difficulty" placeholder="Difficulty to..." value="{{to}}">
+  <input type="submit" value="search">
+</form>
+{{#each cubes}}
+{{> cube}}
+{{else}}
+<p>No cubes yet! <a id="cta" href="/products/create">Create the first one!</a></p>
+{{/each}}
+<script src="/static/js/app.js" type="module"></script>
+{{!-- And work on the front end like in the APP Course -> type of script file is module -> it can import other js files, page, lit-html and so on... --}}
