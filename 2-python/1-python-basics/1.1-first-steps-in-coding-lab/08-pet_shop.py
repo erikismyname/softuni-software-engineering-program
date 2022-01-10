@@ -1,5 +1,7 @@
-dog_food_total = int(input()) * 2.50
+dog_food_count = int(input())
 
-cat_food_total = int(input()) * 4
+cat_food_count = int(input())
 
-print(f'{dog_food_total + cat_food_total} lv.')
+total_food_price = dog_food_count * 2.50 + cat_food_count * 4
+
+print(f'{total_food_price} lv.')
