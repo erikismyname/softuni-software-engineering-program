@@ -1,3 +1,5 @@
 name = input()
 
-print(f'Hello, {name}!')
+greeting = f'Hello, {name}!'
+
+print(greeting)
