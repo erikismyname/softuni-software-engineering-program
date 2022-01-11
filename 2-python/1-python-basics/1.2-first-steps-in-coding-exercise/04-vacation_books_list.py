@@ -3,7 +3,6 @@ pages_read_per_hour = int(input())
 deadline_days = int(input())
 
 total_hours = current_book_pages / pages_read_per_hour
+hours_per_day = int(total_hours / deadline_days)
 
-hours_per_day = total_hours / deadline_days
-
-print(int(hours_per_day))
+print(hours_per_day)
