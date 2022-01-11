@@ -3,6 +3,4 @@ last_name = input()
 age = input()
 town = input()
 
-output = f'You are {first_name} {last_name}, a {age}-years old person from {town}.'
-
-print(output)
+print(f'You are {first_name} {last_name}, a {age}-years old person from {town}.')
