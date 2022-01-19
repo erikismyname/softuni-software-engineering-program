@@ -6,30 +6,30 @@ dahlia_price = 3.8
 tulip_price = 2.8
 narcissus_price = 3
 gladiolus_price = 2.5
-cost = 0
+price = 0
 
 if flowers_type == 'Roses':
-    cost = rose_price * flowers_count
+    price = rose_price * flowers_count
     if flowers_count > 80:
-        cost *= 0.9
+        price *= 0.9
 elif flowers_type == 'Dahlias':
-    cost = dahlia_price * flowers_count
+    price = dahlia_price * flowers_count
     if flowers_count > 90:
-        cost *= 0.85
+        price *= 0.85
 elif flowers_type == 'Tulips':
-    cost = tulip_price * flowers_count
+    price = tulip_price * flowers_count
     if flowers_count > 80:
-        cost *= 0.85
+        price *= 0.85
 elif flowers_type == 'Narcissus':
-    cost = narcissus_price * flowers_count
+    price = narcissus_price * flowers_count
     if flowers_count < 120:
-        cost *= 1.15
+        price *= 1.15
 else:
-    cost = gladiolus_price * flowers_count
+    price = gladiolus_price * flowers_count
     if flowers_count < 80:
-        cost *= 1.20
+        price *= 1.20
 
-result = budget - cost
+result = budget - price
 
 if result >= 0:
     print(f'Hey, you have a great garden with {flowers_count} {flowers_type} and {result:.2f} leva left.')
