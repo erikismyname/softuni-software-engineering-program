@@ -1,7 +1,5 @@
-function solve() {
-
+function greetSoftUni() {
     return 'Hello SoftUni';
-
 }
 
-console.log(solve()); // Hello SoftUni
+console.log(greetSoftUni()); // Hello SoftUni
